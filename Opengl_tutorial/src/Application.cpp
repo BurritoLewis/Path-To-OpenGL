@@ -1,5 +1,5 @@
 #include <GLFW/glfw3.h>
-
+#include <iostream>
 int main(void)
 {
     GLFWwindow* window;
@@ -18,6 +18,7 @@ int main(void)
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
+    std::cout << "ok man" << std::endl;
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
@@ -38,6 +39,8 @@ int main(void)
 
         /* Poll for and process events */
         glfwPollEvents();
+
+        
     }
 
     glfwTerminate();
