@@ -48,6 +48,7 @@ static unsigned int CreateShader(const std::string& vertexShader, const std::str
     return program;
 }
 
+
 int main(void)
 {
     GLFWwindow* window;
@@ -66,7 +67,6 @@ int main(void)
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
-    std::cout << "oggk man" << std::endl;
 
     if (glewInit() != GLEW_OK)
         std::cout << "Glew Error" << std::endl;
