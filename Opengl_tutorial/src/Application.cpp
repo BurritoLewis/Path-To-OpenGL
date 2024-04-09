@@ -112,6 +112,7 @@ static unsigned int CreateShader(const std::string& vertexShader, const std::str
 
 
 
+
 int main(void)
 {
     GLFWwindow* window;
@@ -135,7 +136,7 @@ int main(void)
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
-
+  
     glfwSwapInterval(1);
 
     std::cout << "oggk man" << std::endl;
